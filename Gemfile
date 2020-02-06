@@ -33,9 +33,6 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Make errors better looking
-gem 'better_errors', '~> 2.5', '>= 2.5.1'
-
 # Bulma CSS
 gem 'bulma-rails', '~> 0.8.0'
 
@@ -61,7 +58,9 @@ group :development do
   # Command line tool to handle file system notifications
   gem 'guard', '~> 2.16', '>= 2.16.1'
   # Automatically reloads browser when view is updated
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  # Make errors better looking
+  gem 'better_errors', '~> 2.5', '>= 2.5.1'
 end
 
 group :test do
